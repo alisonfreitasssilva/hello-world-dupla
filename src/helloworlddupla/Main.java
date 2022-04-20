@@ -9,8 +9,13 @@ public class Main {
 		System.out.println("Alteração do código!");
 		
 		Random r = new Random();
+		int numeroDaSorte = Math.abs(r.nextInt() % 10);
+		int numeroSorteado = Math.abs(r.nextInt() % 10);
 		
-		System.out.printf("Seu numero da sorte é: %d\n", r.nextInt() % 100);
+		if (numeroDaSorte == numeroSorteado) 
+			System.out.printf("Parabéns, seu numero foi sorteado!: %d\n", numeroDaSorte);
+		else
+			System.out.printf("Não foi dessa vez! Seu numero é: %d e o numero gerado é: %d\n", numeroDaSorte, numeroSorteado);
 	}
 
 }
