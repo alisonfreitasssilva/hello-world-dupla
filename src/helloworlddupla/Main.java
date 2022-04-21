@@ -8,8 +8,8 @@ public class Main {
 		System.out.println("Bem vindo ao programa de sorteios!");
 		
 		Random r = new Random();
-		int numeroDaSorte = Math.abs(r.nextInt() % 10);
-		int numeroSorteado = Math.abs(r.nextInt() % 10);
+		int numeroDaSorte = Math.abs(r.nextInt() % 100);
+		int numeroSorteado = Math.abs(r.nextInt() % 100);
 		
 		if (numeroDaSorte == numeroSorteado) 
 			System.out.printf("Parabéns, seu numero foi sorteado!: %d\n", numeroDaSorte);
